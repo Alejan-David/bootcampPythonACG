@@ -79,7 +79,7 @@ def MostrarMenu():
     print("2. Ver correos registrados")
     print("3. Buscar un correo específico")
     print("4. Salir de la aplicación")
-    print("Seleccione un opción valida del 1 al 4")
+
 
 def main():
     # Crear la instancia del objeto
@@ -87,7 +87,7 @@ def main():
     # Bucle para el menú principal
     while True:
         MostrarMenu()
-        opcion = input("Seleccione una opción: ").strip()
+        opcion = input("\nSeleccione una opción: ").strip()
         
         if opcion == "1":
             print("\n ¡Recuerde! Los correos deben terminar en @utv.edu.co para profesores \n y en @estudiante.utv.edu.co para estudiantes.")
