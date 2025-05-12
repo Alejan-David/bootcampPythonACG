@@ -13,8 +13,8 @@ class Correo:
     # Guardar correo electrónico
     def AgregarCorreo(self, Correo1):
         # Validar estructura del correo
-        email_regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        if not re.match(email_regex, Correo1):
+        correo_regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        if not re.match(correo_regex, Correo1):
             print("\n El formato del correo no es válido. Intente nuevamente.")
             return    
         
